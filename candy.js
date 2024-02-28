@@ -6,7 +6,7 @@ columns = 9;
 score = 0;
 candyBoard = [];
 
-window.onload = function() {
+window.onload = function () {
     gameStart();
 
 }
@@ -24,6 +24,9 @@ function gameStart() {
             let tile = document.createElement("img");
             tile.id = r.toString() + "-" + c.toString();
             tile.src = "./images/" + randomCandy() + ".png";
+
+            // Dragging Functionality
+            tile.addEventListener("dragStart", dragStart);
 
             document.getElementById("candyBoard").append(tile);
             row.push(tile);
