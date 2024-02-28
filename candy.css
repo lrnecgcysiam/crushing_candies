@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-#board {
+#candyBoard {
     width: 450px;
     height: 450px;
     background-color: lightblue;
@@ -19,7 +19,7 @@ body {
 
 
 /* each candy is 50px by 50px */
-#board img {
+#candyBoard img {
     width: 50px;
     height: 50px;
 }
