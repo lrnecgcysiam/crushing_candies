@@ -27,6 +27,11 @@ function gameStart() {
 
             // Dragging Functionality
             tile.addEventListener("dragStart", dragStart);
+            tile.addEventListener("dragOver", dragOver);
+            tile.addEventListener("dragEnter", dragEnter);
+            tile.addEventListener("dragLeave", dragLeave);
+            tile.addEventListener("dragDrop", dragDrop);
+            tile.addEventListener("dragend", dragEnd);
 
             document.getElementById("candyBoard").append(tile);
             row.push(tile);
@@ -36,3 +41,4 @@ function gameStart() {
 
     console.log(candyBoard);
 }
+
