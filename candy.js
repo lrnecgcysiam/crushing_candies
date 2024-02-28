@@ -42,3 +42,30 @@ function gameStart() {
     console.log(candyBoard);
 }
 
+function dragStart() {
+    currTile = this;
+}
+
+function dragOver() {
+    e.preventDefault();
+}
+
+function dragEnter(e) {
+    e.preventDefault();
+}
+
+function dragLeave() {
+
+}
+
+function dragDrop() {
+    otherTile = this;
+}
+
+function dragEnd() {
+    // If the current Tile or the other tile is blank 
+    if (currTile.src.includes("blank") || otherTile.src.includes("blank")) {
+        return;
+    }
+
+}
