@@ -67,5 +67,10 @@ function dragEnd() {
     if (currTile.src.includes("blank") || otherTile.src.includes("blank")) {
         return;
     }
+    // Grab the coordinates from the img tag id
+    let currCoords = currTile.id.split("-"); // id="0-0" -> ["0", "0"]
 
+    // assign the coordinates to the currentTile
+    let r = parseInt(currCoords[0]);
+    let c = parseInt(currCoords[1]);
 }
